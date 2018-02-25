@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/grass" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/column_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/helmet_height"
+                    android:src="@drawable/packers" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/bottom_pad_text"
+                    android:text="@string/packers"
+                    android:textAppearance="@style/TextFont" />
+
+                <TextView
+                    android:id="@+id/packers_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/bottom_pad_score"
+                    android:text="@string/default_score"
+                    android:textAppearance="@style/ScoreNumber" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addSixForPackers"
+                    android:text="@string/touchdown" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addOneForPackers"
+                    android:text="@string/extra_point" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addTwoForPackers"
+                    android:text="@string/two_point_conversion" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addThreeForPackers"
+                    android:text="@string/field_goal" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addTwoForPackers"
+                    android:text="@string/safety" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/line_width"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/line_top_margin"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="@dimen/column_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/helmet_height"
+                    android:src="@drawable/broncos" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/bottom_pad_text"
+                    android:text="@string/broncos"
+                    android:textAppearance="@style/TextFont" />
+
+                <TextView
+                    android:id="@+id/broncos_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/bottom_pad_score"
+                    android:text="@string/default_score"
+                    android:textAppearance="@style/ScoreNumber" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:backgroundTint="@color/bronco_btn"
+                    android:onClick="addSixForBroncos"
+                    android:text="@string/touchdown"
+                    android:textColor="@android:color/darker_gray" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:backgroundTint="@color/bronco_btn"
+                    android:onClick="addOneForBroncos"
+                    android:text="@string/extra_point"
+                    android:textColor="@android:color/darker_gray" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:backgroundTint="@color/bronco_btn"
+                    android:onClick="addTwoForBroncos"
+                    android:text="@string/two_point_conversion"
+                    android:textColor="@android:color/darker_gray" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:backgroundTint="@color/bronco_btn"
+                    android:onClick="addThreeForBroncos"
+                    android:text="@string/field_goal"
+                    android:textColor="@android:color/darker_gray" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addTwoForBroncos"
+                    android:backgroundTint="@color/bronco_btn"
+                    android:text="@string/safety"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/reset_bottom_margin"
+        android:backgroundTint="@color/reset_background"
+        android:onClick="resetScore"
+        android:text="@string/reset"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

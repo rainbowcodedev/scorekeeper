@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_pad_text">10dp</dimen>
+    <dimen name="helmet_height">100dp</dimen>
+    <dimen name="bottom_pad_score">18dp</dimen>
+    <dimen name="button_marginBottom">8dp</dimen>
+    <dimen name="button_marginLeft">24dp</dimen>
+    <dimen name="button_marginRight">24dp</dimen>
+    <dimen name="line_width">1dp</dimen>
+    <dimen name="line_top_margin">16dp</dimen>
+    <dimen name="column_width">0dp</dimen>
+    <dimen name="reset_bottom_margin">4dp</dimen>
+</resources>

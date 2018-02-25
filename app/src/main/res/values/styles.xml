@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FFC107</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FFC107</item>
+
+    </style>
+
+    <style name="TextFont" parent="android:TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ScoreNumber" parent="android:TextAppearance">
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+</resources>
